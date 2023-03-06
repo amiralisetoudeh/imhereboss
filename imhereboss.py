@@ -10,7 +10,7 @@ I'm Here Boss (v1.0)
 ╚═╝  ╚═╝     ╚═╝    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝
                                                                                           
 
-Author Ali Setoudeh
+Author: Ali Setoudeh
 Copyright (c) 2023
 
 Purpose:
@@ -21,21 +21,19 @@ Microsoft Teams 'Away' Status, and others).
 
 With the default values, this script will do the following:
 
-* Keep track of the current idle time of the system
-* Countdown 4 minutes (240 seconds) to zero
-* Default timer is set to 4 minutes because Microsoft Teams' idle timer is set to 5 minutes
-* If any mouse movement or keyboard stroke is detected, the countdown will reset to 240
-* Once the countdown reaches zero, the script will slightly move the mouse and hit the ctrl key
-* The countdown timer resets to 240 and the cycle continues
+* Keep track of the current idle time of the system.
+* Countdown 4 minutes (240 seconds) to zero.
+  * Default timer is set to 4 minutes because Microsoft Teams' idle timer is set to 5 minutes.
+* If any mouse movement or keyboard stroke is detected, Idle Time resets to 0 and Countdown resets to 240.
+  * This is to prevent the script from moving the mouse and pressing ctrl while you're working.
+* Once the countdown reaches zero, the script will slightly move the mouse and hit the ctrl key.
+* The countdown timer resets to 240 and the cycle continues.
+
+The net result: Your screen will not lock and your Microsoft Teams + Slack will show you as 'Available'.
 
 Output:
-Running the script will generate a PrettyTable with 4 columns:
-Idle Time: Current idle time on the OS. It resets if mouse movement or keyboard strokes are registered.
-Countdown: Time left before the automatic mouse movement and keyboard strokes are generated.
-Mouse Position: The current position of the mouse cursor on the screen.
-Last Ctrl Press: The time stamp of the ctrl key being pressed.
+Running the script will generate a PrettyTable with 5 columns:
 
-Business hours output:
 +-----------------------------------------------------------------------------+
 |                               I'm here, Boss!                               |
 +-------------+-------------+----------------+-----------------+--------------+
@@ -44,13 +42,19 @@ Business hours output:
 | 097 seconds | 143 seconds |   (712, 147)   |     08:35:42    |      23      |
 +-------------+-------------+----------------+-----------------+--------------+
 
+* Idle Time: Current idle time on the OS. It resets if mouse movement or keyboard strokes are registered.
+* Countdown: Time left before the automatic mouse movement and keyboard strokes are generated.
+* Mouse Position: The current position of the mouse cursor on the screen.
+* Last Ctrl Press: The time stamp of the ctrl key being pressed.
+* Wiggle Count: The number of times the mouse was wiggled by the script
 
-After hours output:
-+----------------------------------------------------------------------------+
-|                              I'm away, Boss!                               |
-+----------------------------------------------------------------------------+
-| It's after hours. Current time: 20:28:13. Script will resume at 07:00:00.  |
-+----------------------------------------------------------------------------+
+
+Disclaimner:
+This script is meant to be used responsibly (i.e., while at your computer).
+Don't have this script running and leave your computer unattended.
+Don't run this script if your InfoSec policy prohibits it.
+You and only you are responsible for usage of this script.
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 and associated documentation files (the "Software"), to deal in the Software without restriction, 
