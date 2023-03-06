@@ -9,8 +9,9 @@ Run this script to:
 ## Purpose
 A combination of inconveniences drove me to build this script:
 
-- Our screensaver + screen lock kicked in after 10 minutes of inactivity
-  - Local Admin privileges were removed and therefore we couldn't change it
+- I work from home and am almost always at my computer during business hours.
+- The screensaver + screen lock kicks in after 10 minutes of inactivity (domain GPO setting).
+  - Local Admin privileges were removed and therefore we couldn't change it.
 - **Microsoft Teams** and **Slack** won't allow you change the idle timer and sets your status to 'Away'
   - **Microsoft Teams** idle time is 5 minutes and **Slack** idle time is 10 minutes.
 
@@ -30,7 +31,7 @@ I used to play an [extra long music video on YouTube][LYTV], but that only preve
 ... and so I wrote this script to minimize the workarounds.
 
 ## Disclaimer
-I'm a cyber security professional. This script is obviously a big no-no in the community. It is meant to be used responsibly (i.e., while at your computer). Don't have this script running and leave your computer unattended. Don't run this script if your InfoSec policy prohibits it. You and only you are responsible for usage of this script.
+I'm a cyber security professional. What this script does is obviously a big no-no in the community. It is meant to be used responsibly (i.e., while at your computer). Don't have this script running while leaving your computer unattended. Don't run this script if your InfoSec policy prohibits it. You and only you are responsible for usage of this script.
 
 ## System Requirements
 - The script currently works for Windows OS
